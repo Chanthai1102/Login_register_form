@@ -1,0 +1,99 @@
+/* Link Google Font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4070f4;
+}
+.container{
+    position: relative;
+    max-width: 430px;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0,0.1);
+    border-radius: 10px;
+}
+.container .form{
+    padding: 30px;
+}
+.container .form .tittle{
+    position: relative;
+    font-size: 27px;
+    font-weight: 500;
+}
+.form .tittle::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: #4070f4;
+    border-radius: 24px;
+}
+.form .input_field{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+}
+.input_field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+}
+.input_field input:is(:focus, :valid){
+    border-bottom-color: #4070f4;    
+}
+.input_field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 24px;
+}
+.input_field input:is(:focus, :valid)~i{
+    color: #4070f4;    
+}
+.input_field i.bx-lock-alt{
+    left: 0;
+}
+.input_field i.btn_hide{
+    right: 0;
+}
+.form .button{
+    margin-top: 35px;
+}
+.form .button input{
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #4070f4;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.form .button input:hover{
+    background-color: #256df2;
+}
+.form .login_singup{
+    margin-top: 20px;
+    text-align: center;
+}
